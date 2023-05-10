@@ -1,0 +1,11 @@
+scores = {"Atiku": 1000,"Tinubu": 900,"Obi": 1200,"Sowore": 500,"Kwankwaso": 800,
+}          
+winner_cad = ''
+def show_election_result(scores):
+    for key, value in scores.items():
+        winner= max(scores.values())
+        if scores[key] == winner:
+            winner_cad = key
+    return f"The of 2023 presidential election is {winner_cad} with the total votes of  {winner}"
+    
+print(show_election_result(scores))
